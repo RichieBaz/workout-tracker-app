@@ -1,0 +1,25 @@
+<%- include('../partials/header') %>
+
+<div class="container">
+  <h2>All Workouts</h2>
+
+  <% workouts.forEach(workout => { %>
+    <div class="workout-card">
+      <h3><%= workout.title %></h3>
+      <p>Sets: <%= workout.sets %> | Reps: <%= workout.reps %></p>
+
+      <!-- Edit button -->
+      <a href="/workouts/<%= workout._id %>/edit" class="btn">Edit</a>
+
+      <!-- Delete button -->
+      <form action="/workouts/<%= workout._id %>?_method=DELETE" method="POST" style="display:inline;">
+        <button class="btn delete-btn">Delete</button>
+      </form>
+
+    </div>
+  <% }) %>
+
+  <a href="/workouts/new" class="btn">Add Workout</a>
+</div>
+
+<%- include('../partials/footer') %>

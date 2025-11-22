@@ -1,0 +1,62 @@
+/* GLOBAL ---------------------*/
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  margin: 0;
+}
+
+.container {
+  width: 85%;
+  margin: auto;
+  padding-top: 20px;
+}
+
+/* HEADER ---------------------*/
+header {
+  background: #8a0f36; 
+  color: #fff;
+  padding: 18px 20px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+/* WORKOUT ITEMS --------------*/
+.workout-card {
+  background: #ffffff;
+  padding: 15px;
+  margin: 15px 0;
+  border-radius: 8px;
+  box-shadow: 0px 1px 4px rgba(0,0,0,0.1);
+}
+
+.workout-card h3 {
+  margin-top: 0;
+}
+
+/* BUTTONS --------------------*/
+.btn {
+  display: inline-block;
+  margin-top: 10px;
+  background: #8a0f36;
+  color: #fff;
+  padding: 10px 18px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.25s;
+}
+
+.btn:hover {
+  background: #700b2c;
+}
+
+/* FOOTER ---------------------*/
+footer {
+  background: #8a0f36;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+}
