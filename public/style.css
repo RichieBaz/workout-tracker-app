@@ -60,3 +60,80 @@ footer {
   padding: 15px;
   margin-top: 40px;
 }
+
+/* POPUP STYLES ---------------------*/
+.deletePopup {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.65);
+    z-index: 9999;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.deletePopup.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.popup-content {
+    background: white;
+    padding: 2rem 2.5rem;
+    border-radius: 16px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 420px;
+    width: 90%;
+    transform: scale(0.85) translate(-50%, -50%);
+    position: relative;
+    top: 50%;
+    left: 50%;
+}
+
+.deletePopup.show .popup-content {
+    transform: scale(1) translate(-50%, -50%);
+}
+
+.popup-content h3 {
+    margin: 0 0 0.75rem;
+    font-size: 1.5rem;
+    color: #8a0f36;
+    font-weight: 600;
+}
+
+.popup-content p {
+    margin: 0 0 1.5rem;
+    color: #4b5563;
+    font-size: 1rem;
+}
+
+.popup-content button {
+    min-width: 110px;
+    padding: 0.65rem 1.25rem;
+    margin: 0 0.5rem;
+    border: none;
+    border-radius: 8px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.finalDeleteButton {
+    background: #8a0f36;
+    color: white;
+}
+
+.finalDeleteButton:hover {
+    background: #a71a46;
+    transform: translateY(-1px);
+}
+
+.cancelDeleteButton {
+    background: #e5e7eb;
+    color: #41464e;
+}
+
+.cancelDeleteButton:hover {
+    background: #d1d5db;
+    transform: translateY(-1px);
+}

@@ -12,12 +12,21 @@
       <a href="/workouts/<%= workout._id %>/edit" class="btn">Edit</a>
 
       <!-- Delete button -->
-      <form action="/workouts/<%= workout._id %>?_method=DELETE" method="POST" style="display:inline;">
+      <form class="delete-workout-form" action="/workouts/<%= workout._id %>?_method=DELETE" method="POST" style="display:inline;">
         <button class="btn delete-btn">Delete</button>
       </form>
-
     </div>
   <% }) %>
+
+  <!-- Bootstrap Confirmation Modal -->
+  <div class="deletePopup">
+      <div class="popup-content">
+          <h3>Delete Workout?</h3>
+          <p>This action cannot be undone.</p>
+          <button type="button" class="finalDeleteButton btn btn-danger">Yes, Delete</button>
+          <button type="button" class="cancelDeleteButton btn btn-secondary">Cancel</button>
+      </div>
+  </div>
 
   <a href="/workouts/new" class="btn">Add Workout</a>
 </div>

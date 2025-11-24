@@ -1,0 +1,23 @@
+<%- include('../partials/header') %>
+
+<div class="container">
+    <h2>Edit Workout</h2>
+
+    <form action="/workouts/<%= workout._id %>?_method=PUT" method="POST">
+        <input type="text" name="title" placeholder="Workout Title" value="<%= workout.title %>" required>
+        <input type="number" name="sets" placeholder="Sets" value="<%= workout.sets %>" required>
+        <input type="number" name="reps" placeholder="Reps" value="<%= workout.reps %>" required>
+        
+        <button class="btn" type="submit">Update Workout</button>
+    </form>
+
+    <br>
+    <form action="/workouts/<%= workout._id %>?_method=DELETE" method="POST">
+        <button class="btn btn-danger" type="submit">Delete Workout</button>
+    </form>
+
+    <br>
+    <a class="btn" href="/workouts">Back</a>
+</div>
+
+<%- include('../partials/footer') %>
