@@ -1,27 +1,26 @@
 # Workout Tracker App
-
-This project was built for **Assignment 3 – Workout Tracker** in **INFR3120 – Web & Scripting** under **Professor Ahmed Munieb Sheikh**.
+This project was created for **Assignment 3 – workout-tracker** in **INFR3120 – Web & Scripting** under **Professor Ahmed Munieb Sheikh**.
 It is a full CRUD web application that allows users to track workouts by adding, viewing, editing, and deleting exercises.
-
 ## Features
 - Add new workouts (title, sets, reps)
-- View a list of all workouts saved in MongoDB
-- Edit and update existing entries
-- Delete a workout using a remove button
-- Header & footer partials applied to all pages
-- Env security to hide database credentials
+- View all workouts stored in MongoDB
+- Edit and update existing workouts
+- Delete workouts using a delete confirmation popup
+- Shared header & footer partials across all pages
+- `.env` security used to hide MongoDB credentials
 
-##  echnologies Used
+## Technologies Used
 | Technology | Purpose |
-| Node.js + Express.js | Web server + routing |
-| MongoDB + Mongoose | Database + data modeling |
-| EJS Templates | Dynamic page rendering |
-| dotenv + method-override | Environment security + PUT/DELETE |
-| CSS | Custom styling |
+|-----------|----------|
+| **Node.js + Express.js** | Server + Routing |
+| **MongoDB + Mongoose** | Database + Modeling |
+| **EJS Templates** | Dynamic page rendering |
+| **dotenv + method-override** | Environment security + PUT/DELETE methods |
+| **CSS** | Styling |
+| **JavaScript (public folder)** | Delete confirmation popup |
 
 ## How to Run the App
 
-### 1️⃣ Install Dependencies
+### Install dependencies
 ```bash
 npm install
-
